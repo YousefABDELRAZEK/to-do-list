@@ -7,51 +7,94 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# To-Do App
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+A simple To-Do application built with Laravel 11, designed to help you manage tasks with ease. This application includes features for adding, updating, and deleting tasks, as well as marking tasks as completed.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Add Tasks**: Create new tasks with a title.
+- **Mark as Completed**: Use checkboxes to mark tasks as completed or incomplete.
+- **Delete Tasks**: Remove tasks from the list.
+- **Task Persistence**: All tasks are stored in a MySQL database, ensuring they persist across sessions.
 
-## Learning Laravel
+## Technologies Used
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Laravel 11**: The PHP framework used for building the backend.
+- **MySQL**: The database used for storing tasks.
+- **Blade**: Laravel's templating engine used for rendering views.
+- **CSS**: For styling the application.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Installation
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. **Clone the Repository**:
 
-## Laravel Sponsors
+    ```bash
+    git clone https://github.com/YousefABDELRAZEK/todo.git
+    ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+2. **Navigate to the Project Directory**:
 
-### Premium Partners
+    ```bash
+    cd todo
+    ```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+3. **Install Dependencies**:
+
+    ```bash
+    composer install
+    ```
+
+4. **Set Up Environment**:
+
+    Copy the example environment file and adjust database credentials as needed.
+
+    ```bash
+    cp .env.example .env
+    ```
+
+    Update the `.env` file with your database configuration.
+
+5. **Run Migrations**:
+
+    ```bash
+    php artisan migrate
+    ```
+
+6. **Start the Development Server**:
+
+    ```bash
+    php artisan serve
+    ```
+
+    Visit `http://localhost:8000` in your web browser to access the application.
+
+## Usage
+
+- **Home Page**: View the list of tasks and their statuses.
+- **Create Task**: Add a new task using the input field and "Create" button.
+- **Update Task**: Check or uncheck tasks to mark them as completed or incomplete.
+- **Delete Task**: Remove tasks by clicking the delete button next to each task.
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+If you wish to contribute to this project, please follow these steps:
+
+1. **Fork the Repository**
+2. **Create a New Branch**: `git checkout -b feature/YourFeature`
+3. **Make Your Changes**
+4. **Commit Your Changes**: `git commit -am 'Add new feature'`
+5. **Push to the Branch**: `git push origin feature/YourFeature`
+6. **Create a Pull Request**
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, feel free to reach out to [Youssef Abdelrazek](https://github.com/YousefABDELRAZEK).
+
 
 ## Code of Conduct
 
